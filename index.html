@@ -5,152 +5,173 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemón API</title>
+    <title>Pokédex</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="Resources/favicon.ico" type=".ico">
+    <script src="https://kit.fontawesome.com/8cda2ce4bd.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
     <header>
-        <div> <img class="logo"  src="Resources/logo.png" alt="Logo_pokemon"></div>
-        <div id="header">
-            <input type="search">
-        </div>
+        <section class="top_banner">
+            <div class="logo">
+                <img class="image_logo" src="Resources/layer1.png" alt="logo">
 
+            </div>
+        </section>
+
+        <div class="container_filters">
+            <div class="search_container">
+
+                <input class="searchbar" type="text" placeholder="Search your Pokémon ">
+            </div>
+            <div class="filter_container">
+                <div class="dropdown">
+                    <select name="Pokemon type" id="type">
+                        <option selected="true" disabled="disabled" required> Select a type</option>
+                        <option value="AA"> TYPE 1</option>
+                        <option value="AB"> TYPE 2</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <select name="Pokemon type" id="type">
+                        <option selected="true" disabled="disabled" required> Vunerability</option>
+                        <option value="AA"> VUL 1</option>
+                        <option value="AB"> VUL 2</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <select name="Pokemon type" id="type">
+                        <option selected="true" disabled="disabled" required> Order By</option>
+                        <option value="AA"> A - Z</option>
+                        <option value="AB"> Z - A</option>
+                    </select>
+                </div>
+            </div>
+        </div>
     </header>
-    <div>
-        <legend> 1st Task </legend>
-        <h1> 1 Especies </h1>
-        <h2>1.1 Reino animal</h2>
-        <h3>1.1.1 Vertebrados</h3>
-        <h4>1.1.1.1 Mamiferos</h4>
-        <h5>1.1.1.1.1 Bipedos</h5>
-        <h6>1.1.1.1.1.1 humanos</h6>
-        <h5>1.1.1.1.2 Cuadrupedos</h5>
-        <h4>1.1.1.2 Aves</h4>
-        <h5>1.1.1.2.1 voladoras</h5>
-        <h5>1.1.1.2.2 no 
-        </h5>
-        <h4>1.1.1.3 Reptiles</h4>
-        <h4>1.1.1.4 Peces</h4>
-        <h4>1.1.1.5 Anfibios</h4>
-        <h4>1.1.1.6 Reptiles</h4>
-        <h4>1.1.1.5 Anfibios</h4>
-        <h4>1.1.1.6 Reptiles</h4>
-        <h4>1.1.1.6 last edition</h4>
-    </div>
-    <br>
-    <div>
-        <legend>2nd Task</legend>
-        <h1>Arepas venezolanas</h1>
-        <h3>Ingredientes</h3>
-        <ul>
-            <li>40 gr Salt</li>
-            <li>200 gr flour P.A.N</li>
-            <li>30 gr sugar</li>
-            <li>200 ml water</li>
-            <li>bowl</li>
-            <li>60 gr of butter</li>
-            <li>Stuffing of your choice: cheese, ham, pork, beans, shredded meat, etc.
-            </li>
-        </ul>
-        <h3>Preparation</h3>
-        <ol>
-            <li>Add in the wol the 200 grams of flour, you can sift it if you prefer</li>
-            <li>Add water homogeneously</li>
-            <li>Mix the flour with the water until a solid and smooth dough is formed, avoiding a powdery
-                consistency.</li>
-            </li>
-            <li>Make balls with the dough of the hand size and then flatten leaving a maximum thickness of 1 cm.
-            </li>
-            <li>Put the frying pan over medium heat.</li>
-            <li>Place the flattened and circular dough on the frying pan previously buttered.</li>
-            <li>Remove your arepa in 7 min and place your Stuffing.</li>
-        </ol>
-    </div>
-    <br>
-    <div>
-        <legend>3rd TASK</legend>
-        <table border="2px" style="width: 500px; background-color: rgb(214, 255, 241); text-align: center;">
-            <tr>
-                <th>name</th>
-                <th>last name</th>
-                <th>age</th>
-            </tr>
-            <tr>
-                <td>Juan</td>
-                <td>mota</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td>Juna</td>
-                <td>Landa</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td>jose</td>
-                <td>Prieto</td>
-                <td>10</td>
-            </tr>
-        </table>
-    </div>
-    <br>
-    <div>
-        <Form style="width: 500px; margin-bottom: 100px;">
-            <fieldset>
-                <legend>
-                    <h4>User Information</h4>
-                </legend>
-                <label for="nome">What is your name:</label>
-                <br>
-                <input type="text" name="Username" placeholder="Please write your name" required>
-                <br>
-                <br>
-                <label for="email">What is your email:</label>
-                <br>
-                <input type="email" name="email" id="" placeholder="Please write yourr email" required>
-                <br>
-                <br>
-                <label for="password">What is your password:</label>
-                <br>
-                <input type="password" name="" id="" placeholder="write your password" required>
-                <br>
-                <br>
-                <label for="history">Tell us your history:</label>
-                <br>
-                <textarea name="history" id="" cols="50" rows="5" placeholder="please add your comment"
-                    required></textarea>
-                <br>
-                <br>
-                <label for="item">Do you have a item?</label>
-                <br>
-                <select name="item" id="">
-                    <option selected="true" disabled="disabled" required> -select a item</option>
-                    <option value="AA"> yes, i have a item</option>
-                    <option value="AB"> No, i dont have a item</option>
-                </select>
-                <br>
-                <br>
-                <Label for="gender"> <strong>Please select your benefits</strong></Label>
-                <br>
-                <input type="radio" name="UserBenefits" id="benefits1">
-                <label for="UserBenefits">Benefits 1</label>
-                <input type="radio" name="UserBenefits" id="benefits2">
-                <label for="UserBenefits">Benefits 2</label>
-                <input type="radio" name="UserBenefits" id="benefits3">
-                <label for="UserBenefits">Benefits 3</label>
-                <br>
-                <br>
-                <div><strong>Aceita termos e condições</strong></div>
-                <input type="checkbox" name="acepta" value="1" />
-                <span>Click here if you wish to accept the terms and conditions.</span>
-                <br>
-                <br>
-                <button type="submit">Submit</button>
-                <button type="reset">Clear</button>
-                <button type="button">forgot password</button>
-            </fieldset>
-        </form>
-    </div>
+    <div class="separation" style="width: 100%; height: 15px; background-color: rgb(75, 75, 75);"></div>
+
+    <main>
+        <div class="pokeContainer" id="pokeContainer">
+            <div class="pokemon">
+                
+                <div class="imgContainer">
+                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/1.png"
+                        alt="nome">
+                </div>
+                <div class="info">
+                    <span class="number">Nº001</span>
+                    <h2 class="name">Bulbasaur</h2>
+                    <small class="type_plant"><span>Plant</span></small>
+                    <small class="type_Poison"><span>Poison</span></small>
+                </div>
+            </div>
+
+            <div class="pokemon">
+                <div class="imgContainer">
+                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/2.png"
+                        alt="nome">
+                </div>
+                <div class="info">
+                    <span class="number">Nº002</span>
+                    <h2 class="name">Ivysaur</h2>
+                    <small class="type_plant"><span>Plant</span></small>
+                    <small class="type_Poison"><span>Poison</span></small>
+                </div>
+            </div>
+
+            <div class="pokemon">
+                <div class="imgContainer">
+                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/3.png"
+                        alt="nome">
+                </div>
+                <div class="info">
+                    <span class="number">Nº003</span>
+                    <h2 class="name">Venusaur</h2>
+                    <small class="type_plant"><span>Plant</span></small>
+                    <small class="type_Poison"><span>Poison</span></small>
+                </div>
+            </div>
+
+            <div class="pokemon">
+                <div class="imgContainer">
+                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/4.png"
+                        alt="nome">
+                </div>
+                <div class="info">
+                    <span class="number">Nº004</span>
+                    <h2 class="name">Charmander</h2>
+                    <small class="type_fire"><span>Fire</span></small>
+                </div>
+            </div>
+
+            <div class="pokemon">
+                <div class="imgContainer">
+                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/5.png"
+                        alt="nome">
+                </div>
+                <div class="info">
+                    <span class="number">Nº005</span>
+                    <h2 class="name">Charmeleon</h2>
+                    <small class="type_fire"><span>Fire</span></small>
+                </div>
+            </div>
+
+            <div class="pokemon">
+                <div class="imgContainer">
+                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/6.png"
+                        alt="nome">
+                </div>
+                <div class="info">
+                    <span class="number">Nº006</span>
+                    <h2 class="name">Charizard</h2>
+                    <small class="type_fire"><span>Fire</span></small>
+                </div>
+                
+            </div>
+
+            <div class="pokemon">
+                <div class="imgContainer">
+                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/7.png"
+                        alt="nome">
+                </div>
+                <div class="info">
+                    <span class="number">Nº007</span>
+                    <h2 class="name">Squirtle</h2>
+                    <small class="type_water"><span>Water</span></small>
+                </div>
+            </div>
+
+            <div class="pokemon">
+                <div class="imgContainer">
+                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/8.png"
+                        alt="nome">
+                </div>
+                <div class="info">
+                    <span class="number">Nº008</span>
+                    <h2 class="name">Wartortle</h2>
+                    <small class="type_water"><span>Water</span></small>
+                </div>
+            </div>
+
+            <div class="pokemon">
+                <div class="imgContainer">
+                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/9.png"
+                        alt="nome">
+                </div>
+                <div class="info">
+                    <span class="number">Nº009</span>
+                    <h2 class="name">Blastoise</h2>
+                    <small class="type_water"><span>Water</span></small>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="footer__text">Created by: <br> <strong>Johan Meneses e Matheus Ventura.</strong> </p>
+    </footer>
 </body>
+
 </html>
