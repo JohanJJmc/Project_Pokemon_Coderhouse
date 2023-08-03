@@ -73,7 +73,9 @@ header {
 
 
 
-/*filters*/
+/*----------------filters----------------*/
+
+
 .filter_container {
     padding-right: 30px;
     width: 50%;
@@ -91,6 +93,7 @@ header {
     margin: 0 10px;
 
 
+
 }
 
 .dropdown select {
@@ -100,7 +103,7 @@ header {
     border-radius: 6px;
     box-shadow: 10px 10px 70px -4px rgba(150, 33, 33, 0.75);
     font-size: medium;
-    padding: 5px;
+    padding: 12px;
 
 }
 
@@ -149,7 +152,7 @@ main {
 
 }
 
-.pokemon:hover{
+.pokemon:hover {
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
     box-shadow: 5px -4px 44px -10px rgba(34, 68, 90, 0.75);
@@ -166,7 +169,7 @@ main {
     margin-bottom: 20px;
 }
 
-.imgContainer img{
+.imgContainer img {
     transform: scale(1.2);
 }
 
@@ -187,6 +190,7 @@ small {
     font-weight: bold;
     font-size: 1rem;
 }
+
 /*Types*/
 .type_fire {
     background-color: #ff6161;
@@ -222,19 +226,20 @@ small {
     padding: 4px 10px;
 }
 
-.type_Bug{
+.type_Bug {
     background-color: #729f3f;
     border-radius: 20px;
     padding: 4px 10px;
 }
 
-.type_Normal{
+.type_Normal {
     background: linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
     background-color: #a4acaf;
     color: #212121;
     border-radius: 20px;
     padding: 4px 10px;
 }
+
 /*footer*/
 
 footer {
