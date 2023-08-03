@@ -187,7 +187,7 @@ small {
     font-weight: bold;
     font-size: 1rem;
 }
-
+/*Types*/
 .type_fire {
     background-color: #ff6161;
     border-radius: 20px;
@@ -214,6 +214,26 @@ small {
     border-radius: 20px;
     padding: 4px 10px;
 
+}
+
+.type_Flying {
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    border-radius: 20px;
+    padding: 4px 10px;
+}
+
+.type_Bug{
+    background-color: #729f3f;
+    border-radius: 20px;
+    padding: 4px 10px;
+}
+
+.type_Normal{
+    background: linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
+    background-color: #a4acaf;
+    color: #212121;
+    border-radius: 20px;
+    padding: 4px 10px;
 }
 /*footer*/
 
