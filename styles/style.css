@@ -79,7 +79,7 @@ header {
 .filter_container {
     padding-right: 30px;
     width: 50%;
-
+    margin-left: 40px;
     display: flex;
     justify-content: flex-end;
 
@@ -89,8 +89,9 @@ header {
 }
 
 .dropdown {
-    width: 160px;
+    width: 140px;
     margin: 0 10px;
+    min-width: 140px;
 
 
 
