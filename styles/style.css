@@ -28,6 +28,10 @@ header {
 
 }
 
+
+
+
+
 /*banner area de logo*/
 .top_banner {
     width: 100%;
@@ -41,69 +45,65 @@ header {
     margin: 10px 30px;
 }
 
-/*banner area inferior*/
+/*----------------------banner area inferior temporal (task grid)--------------------------------------------*/
 .container_filters {
     width: 100%;
-    display: flex;
-    padding-bottom: 2rem;
+    display: grid;
+    padding-bottom: 1rem;
+    grid-template-columns: 55% 15% 15% 15%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
 
+        "search  type vul order"
+
+
+    ;
+    background-color: #4561ff;
 }
 
-/*searchbar*/
-
+/*-----------searchbar temporal (task grid)------------------------------------------*/
 .search_container {
-    width: 50%;
-    padding-left: 30px;
+    grid-area: search;
+    background-color: yellow;
+
 }
 
 .searchbar {
-    height: 40px;
-    width: 65%;
-    font-size: medium;
-    font-weight: 600;
-    border: 0px;
+    width: 60%;
+    border: 0%;
+    height: 36px;
+    margin-left: 30px;
     border-radius: 6px;
-    box-shadow: 10px 10px 70px -4px rgba(150, 33, 33, 0.75);
+    border: 0;
     padding-left: 10PX;
 
 
+}
+
+/*----------------filters temporal (task grid)----------------*/
+.dropdown1 {
+    grid-area: type;
+    background-color: #39ff8c;
+}
+
+.dropdown2 {
+    grid-area: vul;
+    background-color: #e945ff;
+}
+
+.dropdown3 {
+    grid-area: order;
+    background-color: #45e3ff;
 
 }
 
-
-
-
-/*----------------filters----------------*/
-
-
-.filter_container {
-    padding-right: 30px;
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-
-
-
-
-}
-
-.dropdown {
-    width: 140px;
-    margin: 0 10px;
-    min-width: 140px;
-
-
-
-}
-
-.dropdown select {
-    width: 100%;
+select {
+    width: 80%;
     height: 100%;
-    border: 0;
     border-radius: 6px;
-    box-shadow: 10px 10px 70px -4px rgba(150, 33, 33, 0.75);
-    font-size: medium;
-    padding: 12px;
+    border: 0;
+    padding-left: 10px;
+
 
 }
 
@@ -111,7 +111,6 @@ select:hover {
     background-color: rgb(70, 70, 70);
     color: aliceblue;
     transition: 0.3s;
-
 }
 
 select:focus {
