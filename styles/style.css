@@ -103,7 +103,7 @@ select {
     border-radius: 6px;
     border: 0;
     padding-left: 10px;
-
+    min-width: 100px;
 
 }
 
