@@ -416,7 +416,38 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
+
+
 <script src="script.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+    swal("Um Pikachu selvagem apareceu! O que você quer fazer?", {
+        buttons: {
+            cancel: "Fuja!",
+            catch: {
+                text: "Jogue uma Pokébola!",
+                value: "Capturar",
+            },
+            Derrota: true,
+        },
+    })
+    .then((value) => {
+        switch (value) {
+ 
+            case "Derrota":
+            swal("Pikachu desmaiou! Você ganhou 500 XP!",);
+                break;
+ 
+            case "Capturar":
+            swal("Peguei Você!", "Pikachu foi pego!", "success");
+                break;
+ 
+            default:
+            swal("Fujiu com Segurança!",);
+            }
+        }); 
+</script>    
 </body>
 
 </html>
