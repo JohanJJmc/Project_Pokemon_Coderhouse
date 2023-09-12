@@ -244,7 +244,7 @@ small {
 .modal-body {
    
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20% 47% 20%;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
 
