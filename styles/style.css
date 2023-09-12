@@ -41,6 +41,11 @@ header {
     margin: 5px 20px;
 }
 
+.image_logo2 {
+    height: 150px;
+    width: auto;
+    margin:-150px 550px;
+}
 /*----------------------banner area inferior temporal (task grid)--------------------------------------------*/
 .container_filters {
     width: 100%;
@@ -108,7 +113,7 @@ main {
     width: 250px;
     height: 350px;
     background-color: aliceblue;
-    margin: 30px 15px 30px 15px;
+    margin: 10px 10px 20px 40px;
     border-radius: 12px;
 
 
