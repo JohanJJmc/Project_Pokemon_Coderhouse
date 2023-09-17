@@ -20,8 +20,8 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
- 
-
+    
+    
 </head>
 
 <body>
@@ -38,9 +38,9 @@
         <div class="container_filters">
 
             <div class="search_container">
-
-                <input class="searchbar" type="text" placeholder="Search your Pokémon ">
+                <input class="searchbar" id="searchbar" type="text" placeholder="Search your Pokémon ">
             </div>
+
 
             <div class="dropdown1">
                 <select name="Pokemon type" id="type">
@@ -68,319 +68,8 @@
     </header>
 
     <main>
-        <div class="container-fluid">
-            <div class="pokemon">
-
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/1.png"
-                        alt="Bulbasaur">
-                </div>
-                <div class="info">
-                    <span class="number">Nº001</span>
-                    <h2 class="name">Bulbasaur</h2>
-                    <small class="type_plant"><span>Plant</span></small>
-                    <small class="type_Poison"><span>Poison</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/2.png"
-                        alt="Ivysaur">
-                </div>
-                <div class="info">
-                    <span class="number">Nº002</span>
-                    <h2 class="name">Ivysaur</h2>
-                    <small class="type_plant"><span>Plant</span></small>
-                    <small class="type_Poison"><span>Poison</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/3.png"
-                        alt="Venusaur">
-                </div>
-                <div class="info">
-                    <span class="number">Nº003</span>
-                    <h3 class="name">Venusaur</h3>
-                    <small class="type_plant"><span>Plant</span></small>
-                    <small class="type_Poison"><span>Poison</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/4.png"
-                        alt="Charmander">
-                </div>
-                <div class="info">
-                    <span class="number">Nº004</span>
-                    <h2 class="name">Charmander</h2>
-                    <small class="type_fire"><span>Fire</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/5.png"
-                        alt="Charmeleon">
-                </div>
-                <div class="info">
-                    <span class="number">Nº005</span>
-                    <h2 class="name">Charmeleon</h2>
-                    <small class="type_fire"><span>Fire</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/6.png"
-                        alt="Charizard">
-                </div>
-                <div class="info">
-                    <span class="number">Nº006</span>
-                    <h2 class="name">Charizard</h2>
-                    <small class="type_fire"><span>Fire</span></small>
-                    <small class="type_Flying"><span>Flying</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/7.png"
-                        alt="Squirtle">
-                </div>
-                <div class="info">
-                    <span class="number">Nº007</span>
-                    <h2 class="name">Squirtle</h2>
-                    <small class="type_water"><span>Water</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/8.png"
-                        alt="Wartortle">
-                </div>
-                <div class="info">
-                    <span class="number">Nº008</span>
-                    <h2 class="name">Wartortle</h2>
-                    <small class="type_water"><span>Water</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/9.png"
-                        alt="Blastoise">
-                </div>
-                <div class="info">
-                    <span class="number">Nº009</span>
-                    <h2 class="name">Blastoise</h2>
-                    <small class="type_water"><span>Water</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/10.png"
-                        alt="Caterpie">
-                </div>
-                <div class="info">
-                    <span class="number">Nº010</span>
-                    <h2 class="name">Caterpie</h2>
-                    <small class="type_Bug"><span>Bug</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/11.png"
-                        alt="Metapod">
-                </div>
-                <div class="info">
-                    <span class="number">Nº011</span>
-                    <h2 class="name">Metapod</h2>
-                    <small class="type_Bug"><span>Bug</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/12.png"
-                        alt="Butterfree">
-                </div>
-                <div class="info">
-                    <span class="number">Nº012</span>
-                    <h2 class="name">Butterfree</h2>
-                    <small class="type_Bug"><span>Bug</span></small>
-                    <small class="type_Flying"><span>Flying</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/13.png"
-                        alt="Weedle">
-                </div>
-                <div class="info">
-                    <span class="number">Nº013</span>
-                    <h2 class="name">Weedle</h2>
-                    <small class="type_Bug"><span>Bug</span></small>
-                    <small class="type_Poison"><span>Poison</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/14.png"
-                        alt="Kakuna">
-                </div>
-                <div class="info">
-                    <span class="number">Nº014</span>
-                    <h2 class="name">Butterfree</h2>
-                    <small class="type_Bug"><span>Bug</span></small>
-                    <small class="type_Poison"><span>Poison</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/15.png"
-                        alt="Beedrill">
-                </div>
-                <div class="info">
-                    <span class="number">Nº015</span>
-                    <h2 class="name">Beedrill</h2>
-                    <small class="type_Bug"><span>Bug</span></small>
-                    <small class="type_Poison"><span>Poison</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/16.png"
-                        alt="Pidgey">
-                </div>
-                <div class="info">
-                    <span class="number">Nº016</span>
-                    <h2 class="name">Pidgey</h2>
-                    <small class="type_Normal"><span>Normal</span></small>
-                    <small class="type_Flying"><span>Flying</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/17.png"
-                        alt="Pidgeotto">
-                </div>
-                <div class="info">
-                    <span class="number">Nº017</span>
-                    <h2 class="name">Pidgeotto</h2>
-                    <small class="type_Normal"><span>Normal</span></small>
-                    <small class="type_Flying"><span>Flying</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/18.png"
-                        alt="Pidgeot">
-                </div>
-                <div class="info">
-                    <span class="number">Nº018</span>
-                    <h2 class="name">Pidgeot</h2>
-                    <small class="type_Normal"><span>Normal</span></small>
-                    <small class="type_Flying"><span>Flying</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/19.png"
-                        alt="Rattata">
-                </div>
-                <div class="info">
-                    <span class="number">Nº019</span>
-                    <h2 class="name">Rattata</h2>
-                    <small class="type_Normal"><span>Normal</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-
-            <div class="pokemon">
-                <div class="imgContainer">
-                    <img src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/20.png"
-                        alt="Raticate">
-                </div>
-                <div class="info">
-                    <span class="number">Nº020</span>
-                    <h2 class="name">Raticate</h2>
-                    <small class="type_Normal"><span>Normal</span></small>
-                </div>
-                <button type="button" class="btn_detail" data-toggle="modal" data-target="#myModal">
-                    View Info
-                </button>
-            </div>
-        </div>
+        <div class="container-fluid" id="pokemonContainer">
+            <!-- Aquí se cargarán los Pokémon -->
         </div>
     </main>
     <!-- Modal -->
@@ -487,11 +176,10 @@
                     }
                 });
             })
-            .catch(error => {
-                console.error("Erro ao obter dados da API do PokeAPI:", error);
-            });
+           
     </script>
-
+    <script src="../Project_Pokemon_Coderhouse/javascript/pokemon.js"></script>
+    <script src="../Project_Pokemon_Coderhouse/javascript/search.js"></script>
 </body>
 
 </html>

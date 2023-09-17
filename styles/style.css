@@ -45,7 +45,14 @@ header {
     width: auto;
     margin: 5px 20px;
 }
+.logo2 {
+   
+    display: inline-flex;
+    justify-content: right;
+    
 
+    
+}
 /*----------------------banner area inferior temporal (task grid)--------------------------------------------*/
 .container_filters {
     width: 100%;
@@ -161,47 +168,47 @@ small {
 }
 
 /*Types*/
-.type_fire {
+.type-fire {
     background-color: #ff6161;
     border-radius: 20px;
     padding: 4px 10px;
 
 }
 
-.type_water {
+.type-water {
     background-color: #45e3ff;
     border-radius: 20px;
     padding: 4px 10px;
 
 }
 
-.type_plant {
+.type-plant {
     background-color: #39ff8c;
     border-radius: 20px;
     padding: 4px 10px;
 
 }
 
-.type_Poison {
+.type-Poison {
     background-color: #e945ff;
     border-radius: 20px;
     padding: 4px 10px;
 
 }
 
-.type_Flying {
+.type-Flying {
     background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
     border-radius: 20px;
     padding: 4px 10px;
 }
 
-.type_Bug {
+.type-Bug {
     background-color: #729f3f;
     border-radius: 20px;
     padding: 4px 10px;
 }
 
-.type_Normal {
+.type-Normal {
     background: linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
     background-color: #a4acaf;
     color: #212121;
