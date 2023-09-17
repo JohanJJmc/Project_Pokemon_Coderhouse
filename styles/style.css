@@ -25,7 +25,12 @@ header {
     background: rgb(255, 80, 69);
     background: linear-gradient(180deg, rgba(255, 80, 69, 1) 0%, rgba(255, 115, 69, 1) 54%);
 }
-
+/*Modal inicial*/
+.pokemon-modal-image {
+    display: block;
+    margin: 30px auto;
+    scale: 2.2;
+}
 
 
 /*banner area de logo*/
