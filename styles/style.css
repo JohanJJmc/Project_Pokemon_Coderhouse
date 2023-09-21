@@ -2,6 +2,7 @@ body {
     margin: 0;
     width: auto;
     font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(98, 126, 143);
 }
 
 h1,
@@ -107,6 +108,7 @@ main {
     background-color: rgb(98, 126, 143);
     padding: 200px;
     height: 100%;
+    min-height: 90%;
 
 
 }

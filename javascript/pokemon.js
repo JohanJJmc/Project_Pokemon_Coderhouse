@@ -3,6 +3,7 @@
 
 
 function cargarPokemon(pokemonData) {
+    
     console.log("pokemon dados", pokemonData);
     // Hacer una solicitud a la PokeAPI para obtener los datos del Pokémon
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonData}`)
@@ -11,7 +12,7 @@ function cargarPokemon(pokemonData) {
         .then(data => {
             // Crear un nuevo elemento de Pokémon
             const pokemonElement = document.createElement("div");
-            pokemonElement.className = "pokemon";
+            pokemonElement.className = `pokemon ${data.types[0].type.name}`;
 
             // Agregar la imagen del Pokémon
             const imgContainer = document.createElement("div");
@@ -82,6 +83,7 @@ function cargarPokemon(pokemonData) {
         .catch(error => {
             console.error("Error al obtener datos del Pokémon:", error);
         });
+        
 }
 
 // Cargar todos los Pokémon 
