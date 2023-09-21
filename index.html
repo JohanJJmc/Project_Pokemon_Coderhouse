@@ -20,8 +20,8 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    
-    
+
+
 </head>
 
 <body>
@@ -38,7 +38,9 @@
         <div class="container_filters">
 
             <div class="search_container">
-                <input class="searchbar" id="searchbar" type="text" placeholder="Search your Pokémon ">
+                <input class="searchbar" id="searchInput" type="text" placeholder="Search your Pokémon " oninput="buscarPokemon(this.value)">
+
+                
             </div>
 
 
@@ -68,8 +70,9 @@
     </header>
 
     <main>
-        <div class="container-fluid" id="pokemonContainer">
+        <div id="pokemonContainer" class="pokemon-container">
             <!-- Aquí se cargarán los Pokémon -->
+
         </div>
     </main>
     <!-- Modal -->
@@ -109,10 +112,10 @@
     </footer>
 
 
-<!-- modal inical-->
+    <!-- modal inical-->
 
     <script>
-        // Função para obter um numero aleatorio dos pokemons
+        // Função para obter um número aleatório dos pokémons
         function getRandomNumber(min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
@@ -122,22 +125,22 @@
             return getRandomNumber(0, 2) === 2;
         }
 
-        // Função para ajustar a primeira letra do pokeon
+        // Função para ajustar a primeira letra do nome do Pokémon
         function capitalizeFirstLetter(string) {
             return string.charAt(0).toUpperCase() + string.slice(1);
         }
 
-
-        // Fazer a solicitação do PokeAPI para obter um Pokémon aleatório no modal
-        fetch("https://pokeapi.co/api/v2/pokemon?limit=1000")
+        // Fazer a solicitação da PokeAPI para obter um Pokémon aleatório no modal
+        fetch("https://pokeapi.co/api/v2/pokemon/")
             .then(response => response.json())
             .then(data => {
-               
                 const randomIndex = getRandomNumber(0, data.results.length - 1);
                 const randomPokemonName = data.results[randomIndex].name;
-                const randomPokemonImageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${randomIndex + 1}.png`;
-                const formattedPokemonName = capitalizeFirstLetter(randomPokemonName); 
-               
+                const randomPokemonID = randomIndex + 1;
+                const formattedPokemonName = capitalizeFirstLetter(randomPokemonName);
+
+                // URL para a imagem oficial do Pokémon
+                const randomPokemonImageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${randomPokemonID}.png`;
 
                 // Criar um elemento de imagem
                 const imageElement = document.createElement("img");
@@ -152,7 +155,7 @@
                 // Exibir a caixa de diálogo SweetAlert2 personalizada
                 swal({
                     title: `Um ${formattedPokemonName} selvagem apareceu! O que você quer fazer?`,
-                    content: messageHtml, 
+                    content: messageHtml,
                     buttons: {
                         cancel: "Fuja!",
                         catch: {
@@ -175,11 +178,11 @@
                             swal("Fujiu com Segurança!");
                     }
                 });
-            })
-           
+            });
+
     </script>
     <script src="../Project_Pokemon_Coderhouse/javascript/pokemon.js"></script>
-    <script src="../Project_Pokemon_Coderhouse/javascript/search.js"></script>
+    <script src="../Project_Pokemon_Coderhouse/javascript/buscarPokemon.js"></script>
 </body>
 
 </html>
